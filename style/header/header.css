@@ -1,0 +1,122 @@
+.header {
+    padding: 0 10px;
+}
+
+.header__nav {
+    display: flex;
+    gap: 20px;
+}
+
+.burger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger__line {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    border-radius: 2px;
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: clamp(0.625rem, -0.057rem + 3.41vw, 2.5rem);
+}
+
+.header__nav-link {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    color: var(--black-color);
+    font-size: 1.25rem;
+}
+
+.navigation {
+    display: none;
+}
+
+.nav__location {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--black-color);
+}
+
+.nav__controles {
+    display: flex;
+    gap: 10px;
+}
+
+.header__nav-bottom__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 13px 0;
+}
+
+.nav__bottom {
+    background-color: var(--basic-color);
+    height: 53px;
+    margin-top: 2vh;
+    width: 100%;
+}
+
+.header__nav-bottom__list {
+    align-items: center;
+}
+
+.nav-bottom__item {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: var(--black-color);
+}
+
+.nav-bottom__item:hover {
+    font-weight: 600;
+    border-bottom: 3px solid var(--accent-color);
+}
+
+@media (min-width: 600px) and (max-width: 900px ){
+    .header__nav-link, .nav__location{
+        font-weight: 400;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .nav__bottom {
+         display: block;
+    }
+    .burger {
+        display: flex;
+    }
+
+    .header__nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+    }
+    
+    .header__nav-list {
+        gap: 20px;
+    }
+
+}
