@@ -12,58 +12,43 @@
 <body>
     <header class="header">
         <div class="wrapper">
-
-             <button class="burger" aria-label="Открыть меню">
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-                <span class="burger__line"></span>
-            </button>
+            <header class="nav__top">
+                <div class="top-bar">
+                    <button class="burger__btn">
+                        <img src="img/header/burger__menu.svg" alt="">
+                    </button>
+                    <ul class="nav__bar-menu">
+                        <li><a class="magazin" href="">Магазины</a></li>
+                        <li><a class="acsee" href="">Акции</a></li>
+                        <li><a class="dostavka" href="">Доставка и оплата</a></li>
+                    </ul>
+                    <a href="" class="img__logo"><img src="img/header/logo.svg" alt="" class="drive__img"></a>
+                    <address class="header__contact"><img src="img/header/lokation.svg" alt="">Москва, ул. Науки 25
+                    </address>
+                    <div class="icons">
+                        <a href=""><img src="img/header/favorits.svg" alt=""></a>
+                        <a href=""><img src="img/header/user.svg" alt=""></a>
+                        <a href=""><img src="img/header/carzina.svg" alt=""></a>
+                    </div>
+                </div>
+            </header>
 
             <nav class="header__nav">
-                <ul class="header__nav-list">
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Магазины</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Акции</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Доставка и оплата</a></li>
-                </ul>
-                <a href="" class="header__nav-logo">
-                    <img src="img/header/logo.svg" alt="" class="nav__logo">
-                </a>
-                <a href="" class="nav__location">
-                    <img src="img/header/lokation.svg" alt="" class="location__img">
-                    Москва,  ул. Науки  25
-                </a>
-                <div class="nav__controles">
-                    <a href="" class="conrles__favorites">
-                        <img src="img/header/favorits.svg" alt="" class="favorites__img">
-                    </a>
-                    <a href="" class="conrles__user">
-                        <img src="img/header/user.svg" alt="" class="user__img">
-                    </a>
-                    <a href="" class="conrles__carzina">
-                        <img src="img/header/carzina.svg" alt="" class="carzina__img">
-                    </a>
-                </div>
-            </nav>
-
-            <nav class="nav__bottom">
-                <ul class="header__nav-bottom__list">
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Квадроциклы</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Катера</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Гидроциклы</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Лодки</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Вездеходы</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Снегоходы</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Двигатели</a></li>
-                    <li class="nav__bottom-link"><a href="" class="nav-bottom__item">Запчасти</a></li>
-                </ul>
-                <ul class="header__nav__bottom-list2">
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Магазины</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Акции</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Доставка и оплата</a></li>
+                <ul class="nav-menu">
+                    <li><a href="#">Квадроциклы</a></li>
+                    <li><a href="#">Катера</a></li>
+                    <li><a href="#">Гидроциклы</a></li>
+                    <li><a href="#">Лодки</a></li>
+                    <li><a href="#">Вездеходы</a></li>
+                    <li><a href="#">Снегоходы</a></li>
+                    <li><a href="#">Двигатели</a></li>
+                    <li><a href="#">Запчасти</a></li>
                 </ul>
             </nav>
         </div>
     </header>
+
+    <script src="scripts/header.js"></script>
 </body>
 
 </html>

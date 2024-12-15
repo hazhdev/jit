@@ -1,122 +1,142 @@
 .header {
-    padding: 0 10px;
+    background-color: #fff;
+    position: relative;
 }
 
-.header__nav {
-    display: flex;
-    gap: 20px;
-}
-
-.burger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.burger__line {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    border-radius: 2px;
-}
-
-.header__nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 25px;
-    align-items: center;
-}
-
-.header__nav-list {
-    display: flex;
-    gap: clamp(0.625rem, -0.057rem + 3.41vw, 2.5rem);
-}
-
-.header__nav-link {
-    font-family: 'SF Pro Display';
-    font-weight: 700;
-    color: var(--black-color);
-    font-size: 1.25rem;
-}
-
-.navigation {
+.burger__btn {
     display: none;
 }
 
-.nav__location {
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.nav__bar-menu {
+    display: flex;
+    gap: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
+    flex-wrap: wrap;
+}
+
+.nav__bar-menu a {
     font-family: 'SF Pro Display';
     font-weight: 700;
-    font-size: 1.25rem;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
     color: var(--black-color);
 }
 
-.nav__controles {
-    display: flex;
-    gap: 10px;
+.header__contact {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+    color: var(--black-color);
 }
 
-.header__nav-bottom__list {
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    background-color: #f1f1f1;
+}
+
+.nav-menu {
     display: flex;
     justify-content: space-between;
-    padding: 15px 0 13px 0;
-}
-
-.nav__bottom {
-    background-color: var(--basic-color);
-    height: 53px;
-    margin-top: 2vh;
-    width: 100%;
-}
-
-.header__nav-bottom__list {
-    align-items: center;
-}
-
-.nav-bottom__item {
+    list-style: none;
+    flex-wrap: wrap;
     font-family: 'SF Pro Display';
     font-weight: 400;
-    font-size: 1.25rem;
+}
+
+.nav-menu a {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+    display: block;
+    padding: 10px 0;
+    color: #333;
+}
+
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+
+.nav-menu a:hover,
+.nav-menu .active {
     color: var(--black-color);
-}
-
-.nav-bottom__item:hover {
     font-weight: 600;
-    border-bottom: 3px solid var(--accent-color);
+    border-bottom: 2px solid #007bff;
 }
 
-@media (min-width: 600px) and (max-width: 900px ){
-    .header__nav-link, .nav__location{
-        font-weight: 400;
-        font-size: 1rem;
+@media (min-width: 600px) and (max-width: 900px) {
+    .nav__bar-menu {
+        gap: 10px;
     }
 }
+
 
 @media (max-width: 600px) {
 
-    .nav__bottom {
-         display: block;
-    }
-    .burger {
-        display: flex;
+    .burger__btn {
+        display: block;
+        border: none;
+        background: #fff;
+        cursor: pointer;
     }
 
-    .header__nav {
-        display: none;
+    .nav__bar-menu,
+    .nav-menu {
         flex-direction: column;
+        background: #fff;
+    }
+
+    .nav-menu, nav {
+        width: 50%;
+        background: #fff;
+    }
+
+    .nav-menu a:hover {
+        border-bottom: none;
+    }
+
+    .img__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__contact {
         position: absolute;
-        top: 60px;
-        right: 0;
-        background-color: #fff;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        width: 100%;
+        bottom: -35px;
+        order: -1;
+    }
+
+    .header__contact img {
+        display: none;
+    }
+
+    .nav__bar-menu {
+        gap: 10px;
+    }
+
+    .nav__bar-menu,
+    .nav-menu,
+    .header__contact {
+        display: none;
+    }
+
+    .nav__bar-menu.active,
+    .header__contact.active,
+    .nav-menu.active {
+        display: block;
     }
     
-    .header__nav-list {
-        gap: 20px;
+    .burger__btn.hidden {
+        display: none;
     }
-
 }
