@@ -1,5 +1,5 @@
 @import url('./header/header.css');
-@import url('/style/main/mainslider.css');
+@import url('./main/mainslider.css');
 
 :root {
     --black-color: #2F3035;
