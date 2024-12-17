@@ -1,0 +1,24 @@
+.main {
+    margin-top: clamp(25px, 5vh, 75px);
+}
+
+.mian__slider-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__slider {
+    background-image: url('/img/main/sliderpeople.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: clamp(20rem, 7.5rem + 62.5vw, 54.375rem);
+    height: clamp(10.25rem, 4.886rem + 26.82vw, 25rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__slider button {
+    cursor: pointer;
+}

@@ -97,7 +97,7 @@ nav {
     }
 
     .nav-menu, nav {
-        width: 50%;
+        width: 25%;
         background: #fff;
     }
 
@@ -112,8 +112,8 @@ nav {
 
     .header__contact {
         position: absolute;
-        bottom: -35px;
-        order: -1;
+        left: 14px;
+        bottom: 0;
     }
 
     .header__contact img {
@@ -139,4 +139,6 @@ nav {
     .burger__btn.hidden {
         display: none;
     }
+
+    
 }
