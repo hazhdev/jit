@@ -16,9 +16,103 @@
     height: clamp(10.25rem, 4.886rem + 26.82vw, 25rem);
     display: flex;
     justify-content: space-between;
-    align-items: center;
 }
 
 .main__slider button {
     cursor: pointer;
+}
+
+
+
+.search__cards {
+    margin-top: 77px;
+}
+
+.search__tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.search__tab {
+    border: none;
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.search__tab--active {
+    background-color: #000;
+    color: #fff;
+}
+
+.search__form {
+    display: flex;
+    gap: 10px;
+}
+
+.search__input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search__button {
+    padding: 10px 20px;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.search__button:hover {
+    background-color: var(--accent-color);
+}
+
+/* Секция категорий */
+.categories {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.categories__item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.categories__item:hover {
+    transform: translateY(-5px);
+    color: var(--accent-color);
+    cursor: pointer;
+}
+
+.categories__image {
+    max-width: 100%;
+    height: auto;
+}
+
+.categories__title {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.categories__title--active {
+    color: var(--accent-color);
+}
+
+.categories__link {
+    color: var(--gray-color);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.categories__link:hover {
+    text-decoration: underline;
 }
