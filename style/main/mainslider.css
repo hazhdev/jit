@@ -2,6 +2,11 @@
     margin-top: clamp(25px, 5vh, 75px);
 }
 
+.main__advertising {
+    display: flex;
+    justify-content: space-between;
+}
+
 .mian__slider-card {
     display: flex;
     justify-content: space-between;
@@ -22,7 +27,56 @@
     cursor: pointer;
 }
 
+.product__card-price {
+    display: flex;
+    justify-content: space-between;
+}
 
+.product-card {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px;
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.product-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: var(--accent-color);
+    margin-bottom: 5px;
+}
+
+.offer {
+    font-style: italic;
+    color: var(--accent-color);
+}
+
+.offer-date {
+    font-family: 'ProximaNova';
+    font-weight: 600;
+}
+
+.offer-date span {
+    color: var(--accent-color);
+}
+
+.price-old {
+    text-decoration: line-through;
+    color: #888;
+}
 
 .search__cards {
     margin-top: 77px;
@@ -76,6 +130,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
+    margin-top: 80px;
 }
 
 .categories__item {
@@ -88,9 +143,9 @@
 }
 
 .categories__item:hover {
-    transform: translateY(-5px);
     color: var(--accent-color);
     cursor: pointer;
+    border: 1px solid var(--gray-color);
 }
 
 .categories__image {
