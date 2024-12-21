@@ -17,8 +17,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    width: clamp(20rem, 7.5rem + 62.5vw, 54.375rem);
-    height: clamp(10.25rem, 4.886rem + 26.82vw, 25rem);
+    width: clamp(20rem, 7.5rem + 62.5vw, 60.375rem);
+    height: clamp(10.25rem, 4.886rem + 26.82vw, 30rem);
     display: flex;
     justify-content: space-between;
 }
@@ -33,7 +33,7 @@
 }
 
 .product-card {
-    width: 300px;
+    width: clamp(16.563rem, 16.563rem + 0vw, 16.563rem);
     border: 1px solid #ccc;
     padding: 15px;
     margin: 10px;
@@ -170,4 +170,15 @@
 
 .categories__link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .main__advertising {
+        flex-direction: column;
+    }
+    .product-card {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }
