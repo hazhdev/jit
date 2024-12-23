@@ -35,7 +35,6 @@
 .product-card {
     width: clamp(16.563rem, 16.563rem + 0vw, 16.563rem);
     border: 1px solid #ccc;
-    padding: 15px;
     margin: 10px;
 }
 
@@ -48,25 +47,33 @@
 }
 
 .product-title {
-    font-weight: bold;
+    font-family: 'SF Pro Display';
+    font-weight: 600;
     margin-bottom: 5px;
+    padding: 0 50px;
+    text-align: center;
 }
 
 .price {
-    font-weight: bold;
+    font-weight: 600;
     font-size: 1.2em;
     color: var(--accent-color);
     margin-bottom: 5px;
 }
 
 .offer {
-    font-style: italic;
-    color: var(--accent-color);
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    background-color: var(--accent-color);
+    color: var(--basic-color);
+    padding: 12px 20px 0 20px;
 }
 
 .offer-date {
     font-family: 'ProximaNova';
     font-weight: 600;
+    margin: 0 49px;
+    text-align: center;
 }
 
 .offer-date span {

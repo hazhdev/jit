@@ -1,0 +1,109 @@
+.product__popular {
+    margin-top: 80px;
+}
+
+.produvct__title {
+    font-family: "Barlow", serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.product__popular-list {
+    display: flex;
+    gap: clamp(30px, 5vw, 50px);
+    padding-top: 25px;
+    overflow-x: scroll;
+}
+
+.product__popular-list::-webkit-scrollbar {
+    display: none;
+}
+
+.product__popular-item {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--black-color);
+    white-space: nowrap;
+}
+
+.product__popular-item:hover {
+    color: var(--black-color);
+    font-weight: 700;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+}
+
+.product__popular-card {
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.popular__card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--gray-color);
+    justify-content: space-between;
+    text-align: center;
+    width: clamp(16.875rem, 16.875rem + 0vw, 16.875rem);
+    height: clamp(25rem, 25rem + 0vw, 25rem);
+}
+
+.popular__card:hover .popular__card::before {
+    content: "посмотреть товар";
+}
+
+.popular__favorites {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popular__card-backpack {
+    width: 200px;
+    height: 200px;
+}
+
+.popular__title {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--black-color);
+    text-align: center;
+}
+
+.popular__card-price {
+    font-family: "Barlow", serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--black-color);
+}
+
+.popular__card-carzina {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.popular__card-carzina img {
+    background-color: var(--accent-color);
+    padding: 10px 14px;
+    border-radius: 15px 0 0 0;
+}
+
+.popular__card-notify, .popular__card-notify-link {
+    padding-bottom: 20px;
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+.popular__btn{
+    display: flex;
+    justify-content: center;
+}
+
+.popular__btn button {
+    background-color: var(--basic-color);
+    padding: 15px 43px;
+    margin-top: 35px;
+}
