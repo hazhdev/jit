@@ -117,61 +117,58 @@
                 </section>
             </div>
             <section class="product__popular">
-                <h2 class="produvct__title">Популярные товары</h2>
+                <h2 class="product__title">Популярные товары</h2>
                 <ul class="product__popular-list">
-                    <li class="product__popular-link"><a href="" class="product__popular-item">запчасти</a></li>
-                    <li class="product__popular-link"><a href="" class="product__popular-item">моторы</a></li>
-                    <li class="product__popular-link"><a href="" class="product__popular-item">шины</a></li>
-                    <li class="product__popular-link"><a href="" class="product__popular-item">электроника</a></li>
-                    <li class="product__popular-link"><a href="" class="product__popular-item">инструменты</a></li>
-                    <li class="product__popular-link"><a href="" class="product__popular-item">аксессуары</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">запчасти</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">моторы</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">шины</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">электроника</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">инструменты</a></li>
+                    <li class="product__popular-link"><a href="#" class="product__popular-item">аксессуары</a></li>
                 </ul>
                 <div class="product__popular-card">
-                    <div class="popular__card">
-                        <div class="popular__favorites">
+                    <a href="#" class="popular__card" onclick="event.stopPropagation()">
+                        <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
-                        </div>
+                        </button>
                         <img class="popular__card-backpack" src="img/main/backpack.png" alt="">
-                        <p class="popular__title">Водонепроницаемый Рюкзак
-                        </p>
+                        <p class="popular__title">Водонепроницаемый Рюкзак</p>
                         <p class="popular__card-price">9 800 ₽</p>
-                        <div class="popular__card-carzina">
-                            <a href=""><img src="img/header/carzina.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="popular__card">
-                        <div class="popular__favorites">
+                        <button class="popular__card-carzina">
+                            <img src="img/header/carzina.svg" alt="">
+                        </button>
+                    </a>
+                    <a href="#" class="popular__card">
+                        <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
-                        </div>
+                        </button>
                         <img class="popular__card-backpack" src="img/main/vest.png" alt="">
                         <p class="popular__title">Спасательный жилет BRP Men's Airflow PFD</p>
                         <p class="popular__card-price">6 900 ₽</p>
-                        <div class="popular__card-carzina">
-                            <a href=""><img src="img/header/carzina.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="popular__card">
-                        <div class="popular__favorites">
+                        <button class="popular__card-carzina">
+                            <img src="img/header/carzina.svg" alt="">
+                        </button>
+                    </a>
+                    <a href="#" class="popular__card">
+                        <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
-                        </div>
+                        </button>
                         <img class="popular__card-backpack" src="img/main/sneakers.png" alt="">
                         <p class="popular__title">BRP Audio-Premium System</p>
                         <p class="popular__card-price">68 000 ₽</p>
-                        <div class="popular__card-carzina">
-                            <a href=""><img src="img/header/carzina.svg" alt=""></a>
-                        </div>
-                    </div>
-                    <div class="popular__card">
-                        <div class="popular__favorites">
+                        <button class="popular__card-carzina">
+                            <img src="img/header/carzina.svg" alt="">
+                        </button>
+                    </a>
+                    <a href="#" class="popular__card">
+                        <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
-                        </div>
+                        </button>
                         <img class="popular__card-backpack" src="img/main/thread.png" alt="">
                         <p class="popular__title">Спасательное снаряжение</p>
                         <p class="popular__card-status">Нет в наличии</p>
-                        <div class="popular__card-notify">
-                            <a href="" class="popular__card-notify-link">Сообщить о поступлении</a>
-                        </div>
-                    </div>
+                        <button  class="popular__card-notify-link">Сообщить о поступлении</button>
+                    </a>
                 </div>
                 <div class="popular__btn">
                     <button>ПОКАЗАТЬ ЕЩЁ</button>
@@ -181,6 +178,7 @@
     </main>
 
     <script src="scripts/header.js"></script>
+    <script src="./scripts/products.js"></script> 
 </body>
 
 </html>

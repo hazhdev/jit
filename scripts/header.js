@@ -44,3 +44,4 @@ document.addEventListener('click', function (event) {
     hideMenu(); // Скрываем меню и показываем кнопку бургер
   }
 });
+
