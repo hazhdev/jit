@@ -1,0 +1,116 @@
+.footer {
+    position: relative;
+    background-color: var(--basic-color);
+    margin-top: 90px;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer__mail {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer__main-text {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: 0.8rem;
+}
+
+.footer__search {
+    display: flex;
+}
+
+.footer__search input {
+    border: none;
+    outline: none;
+    padding: 8px 0 8px 12px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.footer__search input:placeholder-shown {
+    border-color: transparent;
+}
+
+.footer__search input:valid {
+    border: 2px solid green;
+}
+
+.footer__btn {
+    background-color: var(--accent-color);
+    padding: 8px 15px;
+    color: var(--basic-color);
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer
+}
+
+.footer__infa,
+.footer__magazin {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.footer__infa-title,
+.footer__magazin-title {
+    font-family: 'SF Pro Display';
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.footer__infa img, .footer__magazin img {
+    display: none;
+}
+
+.footer__social {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+.footer__link {
+    font-family: 'SF Pro Display';
+    font-size: 0.8rem;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .footer__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer__infa img, .footer__magazin img {
+        display: block;
+    }
+
+    .footer__list {
+        display: none;
+    }
+
+    .footer__infa-nav {
+        padding-top: 20px;
+    }
+
+    .footer__magazin-nav {
+        padding: 20px 0;
+    }
+}

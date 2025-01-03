@@ -135,44 +135,46 @@
 /* Секция категорий */
 .categories {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .categories__item {
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
-    transition: transform 0.3s;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .categories__item:hover {
-    color: var(--accent-color);
+    transform: scale(1.05);
     cursor: pointer;
-    border: 1px solid var(--gray-color);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 .categories__image {
     max-width: 100%;
     height: auto;
+    margin-bottom: 15px;
 }
 
 .categories__title {
-    font-size: 18px;
+    font-size: 20px;
     margin: 10px 0;
+    font-weight: bold;
 }
 
 .categories__title--active {
-    color: var(--accent-color);
+    color: #007BFF;
 }
 
 .categories__link {
-    color: var(--gray-color);
+    color: #666;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .categories__link:hover {
@@ -183,9 +185,7 @@
     .main__advertising {
         flex-direction: column;
     }
-    .product-card {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
+    .categories {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }

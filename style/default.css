@@ -1,6 +1,8 @@
 @import url('./header/header.css');
 @import url('./main/mainslider.css');
 @import url('./main/products.css');
+@import url('./main/discount.css');
+@import url('./footer.css');
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 
@@ -35,6 +37,7 @@ ul, li, ol {
 button {
     background: none;
     border: none;
+    cursor: pointer;
 }
 
 input {

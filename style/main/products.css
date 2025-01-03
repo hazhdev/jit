@@ -59,14 +59,14 @@
 .popular__favorites {
     display: flex;
     justify-content: flex-end;
+    padding: 16px 23px0 0;
 }
 
 .popular__favorites .active {
-    background-color: var(--accent-color);
+    background-color: #007bff;
 }
 
 .popular__card-backpack {
-    width: 200px;
     height: 200px;
 }
 
