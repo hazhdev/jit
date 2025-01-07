@@ -79,10 +79,8 @@
 }
 
 .footer__list {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
     padding-top: 5px;
+    display: block;
 }
 
 .footer__link {
@@ -114,3 +112,4 @@
         padding: 20px 0;
     }
 }
+
