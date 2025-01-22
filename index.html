@@ -25,9 +25,15 @@
                 <address class="header__contact"><img src="img/header/lokation.svg" alt="">Москва, ул. Науки 25
                 </address>
                 <div class="icons">
-                    <a class="icon__karzina" href="#"><img class="karzina__img" src="img/header/favorits.svg" alt=""><span>0</span></a>
+                    <a class="icon__favorits" href="#">
+                        <img class="favorits__img" src="img/header/favorits.svg" alt="">
+                        <span class="favorits__value" id="favorits__value">0</span>
+                    </a>
                     <a href="#"><img src="img/header/user.svg" alt=""></a>
-                    <a href="#"><img src="img/header/carzina.svg" alt=""></a>
+                    <a class="icon__carzina" href="#">
+                        <img class="carzina__img" src="img/header/carzina.svg" alt="">
+                        <span class="karzina__value" id="karzina__value">0</span>
+                    </a>
                 </div>
             </div>
 
@@ -71,7 +77,7 @@
             <div class="search__cards">
                 <section class="search">
                     <div class="search__tabs">
-                        <button class="search__tab search__tab--active">Поиск по номеру</button>
+                        <button class="search__tab">Поиск по номеру</button>
                         <button class="search__tab">Поиск по марке</button>
                         <button class="search__tab">Поиск по названию товара</button>
                     </div>
@@ -125,46 +131,54 @@
                     <li class="product__popular-link"><a href="#" class="product__popular-item">аксессуары</a></li>
                 </ul>
                 <div class="product__popular-card">
-                    <a href="#" class="popular__card">
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/backpack.png" alt="">
-                        <p class="popular__title">Водонепроницаемый Рюкзак</p>
-                        <p class="popular__card-price">9 800 ₽</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/backpack.png" alt="">
+                            <p class="popular__title">Водонепроницаемый Рюкзак</p>
+                            <p class="popular__card-price">9 800 ₽</p>
+                        </a>
                         <button class="popular__card-carzina">
                             <img src="img/header/carzina.svg" alt="">
                         </button>
-                    </a>
-                    <a href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/vest.png" alt="">
-                        <p class="popular__title">Спасательный жилет BRP Men's Airflow PFD</p>
-                        <p class="popular__card-price">6 900 ₽</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/vest.png" alt="">
+                            <p class="popular__title">Спасательный жилет BRP Men's Airflow PFD</p>
+                            <p class="popular__card-price">6 900 ₽</p>
+                        </a>
                         <button class="popular__card-carzina">
                             <img src="img/header/carzina.svg" alt="">
                         </button>
-                    </a>
-                    <a href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/sneakers.png" alt="">
-                        <p class="popular__title">BRP Audio-Premium System</p>
-                        <p class="popular__card-price">68 000 ₽</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/sneakers.png" alt="">
+                            <p class="popular__title">BRP Audio-Premium System</p>
+                            <p class="popular__card-price">68 000 ₽</p>
+                        </a>
                         <button class="popular__card-carzina">
                             <img src="img/header/carzina.svg" alt="">
                         </button>
-                    </a>
-                    <div href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/thread.png" alt="">
-                        <p class="popular__title">Спасательное снаряжение</p>
-                        <p class="popular__card-status">Нет в наличии</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/thread.png" alt="">
+                            <p class="popular__title">Спасательное снаряжение</p>
+                            <p class="popular__card-status">Нет в наличии</p>
+                        </a>
                         <button class="popular__card-notify-link">Сообщить о поступлении</button>
                     </div>
                 </div>
@@ -181,8 +195,6 @@
                 <button class="discount__btn">ПОСМОТЕТЬ ВСЕ</button>
             </div>
 
-
-
             <section class="product__popular">
                 <h2 class="product__title">С этим товаром покупают</h2>
                 <ul class="product__popular-list">
@@ -194,46 +206,53 @@
                     <li class="product__popular-link"><a href="#" class="product__popular-item">аксессуары</a></li>
                 </ul>
                 <div class="product__popular-card">
-                    <a href="#" class="popular__card">
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/audio.png" alt="">
-                        <p class="popular__title">BRP Audio-портативная система</p>
-                        <p class="popular__card-status">Нет в наличии</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/audio.png" alt="">
+                            <p class="popular__title">BRP Audio-портативная система</p>
+                            <p class="popular__card-status">Нет в наличии</p>
+                        </a>
                         <button class="popular__card-notify-link">Сообщить о поступлении</button>
-                    </a>
-                    <a href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/garmin.png" alt="">
-                        <p class="popular__title">Garmin Echomap Plus 62cv</p>
-                        <p class="popular__card-price">45 800 ₽</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/garmin.png" alt="">
+                            <p class="popular__title">Garmin Echomap Plus 62cv</p>
+                            <p class="popular__card-price">45 800 ₽</p>
+                        </a>
                         <button class="popular__card-carzina">
                             <img src="img/header/carzina.svg" alt="">
                         </button>
-                    </a>
-                    <a href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
-                        <img class="popular__card-backpack" src="img/main/key.png" alt="">
-                        <p class="popular__title">RF D.E.S.S.TM Key</p>
-                        <p class="popular__card-status">Нет в наличии</p>
+                        <a href="" class="popular__content">
+                            <img class="popular__card-backpack" src="img/main/key.png" alt="">
+                            <p class="popular__title">RF D.E.S.S.TM Key</p>
+                            <p class="popular__card-status">Нет в наличии</p>
+                        </a>
                         <button class="popular__card-notify-link">Сообщить о поступлении</button>
-                    </a>
-                    <a href="#" class="popular__card">
+                    </div>
+                    <div class="popular__card">
                         <button class="popular__favorites">
                             <img src="img/header/favorits.svg" alt="" class="popular__favorits-img">
                         </button>
+                        <a href="" class="popular__content"></a>
                         <img class="popular__card-backpack" src="img/main/acvalang.png" alt="">
                         <p class="popular__title">Мужской костюм 3мм</p>
                         <p class="popular__card-price">7 000 ₽</p>
                         <button class="popular__card-carzina">
                             <img src="img/header/carzina.svg" alt="">
                         </button>
-                    </a>
+                    </div>
                 </div>
             </section>
         </div>
@@ -293,6 +312,7 @@
     <script src="scripts/header.js"></script>
     <script src="scripts/products.js"></script>
     <script src="scripts/footer.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
