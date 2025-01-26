@@ -1,0 +1,168 @@
+.header {
+    background-color: #fff;
+    position: relative;
+}
+
+.burger__btn {
+    display: none;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__bar-menu {
+    display: flex;
+    gap: clamp(2.5rem, 2.273rem + 1.14vw, 3.125rem);
+    flex-wrap: wrap;
+}
+
+.nav__bar-menu a {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+    color: var(--black-color);
+}
+
+.header__contact {
+    font-family: 'SF Pro Display';
+    font-weight: 700;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+    color: var(--black-color);
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    gap: 18px;
+}
+
+.icon__favorits,
+.icon__carzina {
+    position: relative;
+}
+
+.favorits__value,
+.karzina__value {
+    background-color: var(--accent-color);
+    color: var(--basic-color);
+    border-radius: 100%;
+    padding: 4px 8px;
+    position: absolute;
+    top: 10px;
+    left: 18px;
+    font-family: 'SF Pro Display';
+    font-weight: 500;
+    font-size: 10px;
+}
+
+nav {
+    background-color: #f1f1f1;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    flex-wrap: wrap;
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+}
+
+.nav-menu a {
+    font-family: 'SF Pro Display';
+    font-weight: 400;
+    font-size: clamp(0.625rem, 0.398rem + 1.14vw, 1.25rem);
+    display: block;
+    padding: 10px 0;
+    color: #333;
+}
+
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+
+.nav-menu a:hover,
+.nav-menu .active {
+    color: var(--black-color);
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    .nav__bar-menu {
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .burger__btn {
+        display: block;
+        border: none;
+        background: #fff;
+        cursor: pointer;
+    }
+
+    .nav__bar-menu,
+    .nav-menu {
+        flex-direction: column;
+        background: #fff;
+    }
+
+    .nav-menu,
+    nav {
+        width: 25%;
+        background: #fff;
+    }
+
+    .nav-menu a:hover {
+        border-bottom: none;
+    }
+
+    .img__logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__contact {
+        position: absolute;
+        left: 14px;
+        bottom: 0;
+    }
+
+    .header__contact img {
+        display: none;
+    }
+
+    .nav__bar-menu {
+        gap: 10px;
+    }
+
+    .nav__bar-menu,
+    .nav-menu,
+    .header__contact {
+        display: none;
+    }
+
+    .nav__bar-menu.active,
+    .header__contact.active,
+    .nav-menu.active {
+        display: block;
+    }
+
+    .burger__btn.hidden {
+        display: none;
+    }
+
+
+}

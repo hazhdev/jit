@@ -1,0 +1,45 @@
+@import url('./header/header.css');
+@import url('./main/mainslider.css');
+@import url('./main/products.css');
+@import url('./main/discount.css');
+@import url('./footer.css');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
+
+:root {
+    --black-color: #2F3035;
+    --accent-color: #1C62CD;
+    --gray-color: #C4C4C4;
+    --basic-color: #F0F0F4;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+.wrapper {
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    outline: none;
+}
